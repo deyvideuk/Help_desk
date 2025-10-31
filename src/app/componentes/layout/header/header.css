@@ -30,8 +30,7 @@ header{
 /* estilização da area menu e menu */
 
 .area-menu{
-    /* border: 1px solid green; */
-    width: 40%;
+    border: 1px solid green;
 }
 
 .area-menu ul{
