@@ -1,0 +1,39 @@
+/*tirar espaços desnecess (ajuste)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    width: 900px;
+    height: 600px;
+    background-color: #3a3a3a;
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.ladoEsquerdo {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.formBranco {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+   
+}
+inputcpf, inputsenha {
+
+}
+input {
+    background-color: #d9d9d9;
+    border: none;
+}
+

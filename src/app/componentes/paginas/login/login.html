@@ -7,15 +7,19 @@
             <div class="msgLogin">
                 <p>MENSAGENS DE BOAS-VINDAS DE VOLTA</p>
             </div>
-            <div>
-                <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label>
-                <input type="text" name="cpf/cnpj" id="cpf" placeholder="CPF/CNPJ">
-                <label for="senha">Digite sua <strong>senha</strong></label>
-                <input type="password" name="senha" id="senha" placeholder="SENHA">
-            </div>
-            <a href="">Esqueci minha senha</a>
-            <a href="">Ainda não possui cadastro?</a>
-            <button>ENTRAR</button>
+            <form [formGroup]="form" class="formBranco">
+                <div class="inputcpf">
+                    <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label><br>
+                    <input type="text" formControlName="cpf" id="cpf" placeholder="CPF/CNPJ">
+                </div>
+                <div class="inputsenha">
+                    <label for="senha">Digite sua <strong>senha</strong></label><br>
+                    <input type="password" formControlName="senha" id="senha" placeholder="SENHA">
+                </div>
+                <a href="">Esqueci minha senha</a><br>
+                <a href="">Ainda não possui cadastro?</a><br>
+                <button>ENTRAR</button>
+            </form>
         </div>
     </div>
 
