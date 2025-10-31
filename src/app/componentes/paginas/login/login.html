@@ -1,24 +1,49 @@
-<div class="conteudo">
+<app-header></app-header>
+<section class="conteudo">
     <div class="ladoEsquerdo">
         <div class="formBranco">
-            <div class="logo">
-                <img src="" alt="LOGO_HELPDESK">
-            </div>
             <div class="msgLogin">
                 <p>MENSAGENS DE BOAS-VINDAS DE VOLTA</p>
             </div>
-            <form [formGroup]="form" class="formBranco">
-                <div class="inputcpf">
+
+            @if (formLogin.get('cpf')?.hasError('required') && formLogin.get('cpf')?.touched) {
+                <div class="alert alert-warning" role="alert">
+                    <p>Preencha o campo CPF/CNPJ</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }@else if (formLogin.get('cpf')?.hasError('minlength') && formLogin.get('cpf')?.touched) {
+                <div class="alert alert-warning" role="alert">
+                    <p>O campo CPF/CNPJ deve ter no minimo 11 caracteres.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @if (formLogin.get('senha')?.hasError('required') && formLogin.get('senha')?.touched) {
+                <div class="alert alert-warning">
+                    <p>O campo senha é obrigatório.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }@else if (formLogin.get('senha')?.hasError('minlength') && formLogin.get('senha')?.touched) {
+                <div class="alert alert-warning" role="alert">
+                    <p>A senha deve ter no minimo 6 caracteres.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <form [formGroup]="formLogin" (ngSubmit)="onSubmitLogin()" class="formBranco">
+                <div class="area-input">
                     <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label><br>
                     <input type="text" formControlName="cpf" id="cpf" placeholder="CPF/CNPJ">
                 </div>
-                <div class="inputsenha">
+                <div class="area-input">
                     <label for="senha">Digite sua <strong>senha</strong></label><br>
                     <input type="password" formControlName="senha" id="senha" placeholder="SENHA">
                 </div>
-                <a href="">Esqueci minha senha</a><br>
-                <a href="">Ainda não possui cadastro?</a><br>
-                <button>ENTRAR</button>
+                <div class="area-input">
+                    <a href="">Esqueci minha senha</a><br>
+                    <a href="">Ainda não possui cadastro?</a>
+                </div>
+                <button type="submit" [disabled]="formLogin.invalid">ENTRAR</button>
             </form>
         </div>
     </div>
@@ -26,5 +51,6 @@
     <div class="ladoDireito">
         <img src="" alt="IMAGEM DE FUNDO DIREITA">
     </div>
+</section>
 
-</div>
+<app-footer></app-footer>

@@ -1,15 +1,23 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Header } from './../../layout/header/header';
+import { Footer } from '../../layout/footer/footer';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule],
-  templateUrl: './login.html',
+  imports: [ReactiveFormsModule, Header, Footer],
+templateUrl: './login.html',
   styleUrl: './login.css'
 })
 export class Login {
-  form = new FormGroup({
-    cpf : new FormControl(''),
-    senha : new FormControl('')
+  formLogin = new FormGroup({
+    cpf : new FormControl('', [Validators.required, Validators.minLength(11), Validators.maxLength(14)]),
+    senha : new FormControl('', [Validators.required, Validators.minLength(6)])
   });
+
+  onSubmitLogin() {
+    if(this.formLogin.valid){
+      alert("Login efetuado com sucesso!");
+    }
+  }
 }

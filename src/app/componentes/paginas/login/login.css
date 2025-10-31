@@ -1,39 +1,83 @@
-/*tirar espaços desnecess (ajuste)*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.conteudo{
+    background-color: var(--cor-secundaria);
+    background-image: url(/imagens/backgrounds/background-home.jpg);
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.conteudo {
-    width: 900px;
-    height: 600px;
-    background-color: #3a3a3a;
+.ladoEsquerdo{
     display: flex;
-    border-radius: 4px;
-    overflow: hidden;
-}
-.ladoEsquerdo {
-
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    /* border: solid 1px red; */
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.formBranco {
-    background-color: #ffffff;
-    padding: 40px 30px;
+.formBranco{
+    display: flex;
+    background-color: var(--cor-fundo-branco);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.area-input{
+    flex-direction: column;
+    width: 100%;
+}
+
+.ladoDireito{
+    border: solid 1px blue;
     width: 100%;
     max-width: 400px;
-   
 }
-inputcpf, inputsenha {
 
-}
-input {
-    background-color: #d9d9d9;
+input{
+    color: var(--cor-fundo-branco);
+    background-color: var(--cor-primaria) ;
+    padding : 10px 20px;
+    border-radius: 20px;
+    outline: none;
     border: none;
+
+}
+input::placeholder{
+    color: var(--cor-fundo-branco);
 }
 
+button:disabled{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 20px;
+    opacity: 0.6;
+    cursor: no-drop;
+}
+button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 800;
+}
+.msgLogin{
+    /* border: solid 1px green ; */
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: 800;
+
+}
