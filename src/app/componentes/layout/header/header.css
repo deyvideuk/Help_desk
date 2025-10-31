@@ -4,18 +4,27 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+    color: var(--cor-texto-preto);
+    padding: 10px 30px;
 }
 
 /* Estilização da area logo e logo */
 
 .area-logo{
     /* border: 1px solid red; */
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+}
+
+.area-logo img{
+    display: flex;
+    width: 100%;
 }
 
 /* estilização da area menu e menu */
@@ -54,7 +63,7 @@ header{
 .area-menu ul li a{
     display: flex;
     text-decoration: none;
-    color: var(--cor-texto);
+    color: var(--cor-texto-preto);
     position: relative;
     padding: 5px 10px;
 }
