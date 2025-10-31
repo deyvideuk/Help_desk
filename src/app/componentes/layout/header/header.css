@@ -1,26 +1,27 @@
 /* Estilização do header */
 header{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100px;
     align-items: center;
     justify-content: space-evenly;
-    
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
 }
 
 /* Estilização da area logo e logo */
 
 .area-logo{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40%;
 }
 
 /* estilização da area menu e menu */
 
 .area-menu{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 40%;
 }
 
@@ -42,10 +43,34 @@ header{
 .area-menu ul li:not(:last-child)::after{
     content: "";
     display: flex;
-    width: 2px;
+    width: 1px;
     height: 100%;
     background-color: black;
     position: absolute;
     bottom: 0;
     right: -10px;
+}
+
+.area-menu ul li a{
+    display: flex;
+    text-decoration: none;
+    color: var(--cor-texto);
+    position: relative;
+    padding: 5px 10px;
+}
+
+.area-menu ul li a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.8s all;
+}
+
+.area-menu ul li a:hover::before{
+    width: 100%;
+    /* transition: 90ms all; */
 }

@@ -1,7 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* iportando fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* definindo variaveis de cores para padronizar CSS global */
+:root{
+    --cor-primaria: #4A4A4A;
+    --cor-secundaria: #CBCBCB;
+    --cor-terciaria: #FFFFFF;
+    --cor-texto: #000000;
+}
+
+/* estilização globa */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
