@@ -5,11 +5,14 @@
 
 /* definindo variaveis de cores para padronizar CSS global */
 :root{
-    --cor-primaria: #4A4A4A;
-    --cor-secundaria: #CBCBCB;
-    --cor-terciaria: #FFFFFF;
+    --cor-primaria: #024059;
+    --cor-secundaria: #026873;
+    --cor-verde-claro: #04BF8A;
+    --cor-verde-escuro: #025940;
+    --cor-verde-vivo: #03A64A;
     --cor-texto-preto: #000000;
     --cor-texto-branco: #FFFFFF;
+    --cor-fundo-branco: #FFFFFF;
 }
 
 /* estilização globa */
@@ -62,7 +65,7 @@ ul li a::before{
     content: '';
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: var(--cor-texto-branco);
     position: absolute;
     left: 0;
     bottom: 0;

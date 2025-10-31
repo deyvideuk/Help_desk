@@ -1,19 +1,19 @@
 <app-header></app-header>
 
     <section id="home">
-        <div class="box">
+        <div class="box" style="gap: 20px;">
             <div class="titulo">
-                <h1>Titulo do Site</h1>
+                <h1>Energisa Help Desk <br> Suporte ao Cliente</h1>
             </div>
             <div class="sub-titulo">
-                <h2>Texto de exibição sobre a plataforma e boas vindas</h2>
+                <h2>Bem-vindo ao Energisa Help Desk, o seu canal direto de atendimento e suporte técnico. Aqui você encontra soluções rápidas para dúvidas, solicitações e problemas relacionados ao fornecimento de energia elétrica. Nosso objetivo é garantir agilidade, transparência e eficiência em cada atendimento. Conte conosco para manter sua energia sempre ligada!</h2>
             </div>
         </div>
         <div class="box">
             <div class="area-newsletter">
-                <h3>Cadastro de newsletter</h3>
+                <h3>Fique por dentro de tudo!</h3>
                 <div class="texto">
-                    <p>Receba em seu email notificações de falta de energia.</p>
+                    <p>Cadastre seu e-mail e receba alertas instantâneos sobre quedas de energia, avisos de manutenção e novidades da Energisa.</p>
                 </div>
                 @if (newsletter.get('email')?.hasError('email')) {
                     <div class="alert alert-warning d-flex w-75 m-auto text-start">

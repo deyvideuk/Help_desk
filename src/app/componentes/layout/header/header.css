@@ -6,8 +6,8 @@ header{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto-preto);
+    background-color: #024059;
+    color: var(--cor-texto-branco);
     padding: 10px 30px;
 }
 
@@ -19,7 +19,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .area-logo img{
@@ -28,10 +28,6 @@ header{
 }
 
 /* estilização da area menu e menu */
-
-.area-menu{
-    /* border: 1px solid green; */
-}
 
 .area-menu ul{
     display: flex;
@@ -62,7 +58,7 @@ header{
 .area-menu ul li a{
     display: flex;
     text-decoration: none;
-    color: var(--cor-texto-preto);
+    color: var(--cor-texto-branco);
     position: relative;
     padding: 5px 10px;
 }
@@ -71,7 +67,7 @@ header{
     content: '';
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: var(--cor-texto-branco);
     position: absolute;
     left: 0;
     bottom: 0;
