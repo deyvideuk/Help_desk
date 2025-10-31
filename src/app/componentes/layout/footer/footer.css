@@ -1,0 +1,90 @@
+/* Estilização geral da tag pai */
+footer{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px;
+}
+
+/* Estilização da descricao do footer */
+.area-descricao-footer{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    gap: 5px;
+}
+
+.area-descricao-footer .area-img{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    max-width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-descricao-footer .area-img img{
+    display: flex;
+    width: 100%;
+}
+
+.area-descricao-footer .texto{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.area-descricao-footer .texto h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* estilização do suporte footer */
+
+.suporte-footer{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 5px; 
+    justify-content: space-between;
+    align-items: end;
+}
+
+.suporte-footer .contatos{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.box-contatos{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    max-width: 350px;
+    word-break: break-all;
+}
+
+
+.box-contatos .area-img{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+}
+
+.box-contatos .area-img img{
+    display: flex;
+    width: 100%;
+}
