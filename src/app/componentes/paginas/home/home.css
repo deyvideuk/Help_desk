@@ -1,0 +1,109 @@
+
+#home{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-around;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    background-image: url("/imagens/backgrounds/background-home.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 70vh;
+}   
+
+.box{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.box .sub-titulo h2{
+    font-size: 30px;
+}
+
+.area-newsletter{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto-preto);
+    border-radius: 20px;
+}
+
+.texto{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+
+.texto p{
+    font-size: 18px;
+}
+
+.area-newsletter form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.area-newsletter form input[type=email]{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    margin-bottom: 10px;
+}
+
+.area-newsletter form input[type=email]::placeholder{
+    color: var(--cor-texto-branco);
+    transition: 1s all;
+}
+.area-newsletter form input[type=email]:hover::placeholder{
+    transform: translateX(-60px);
+    opacity: 0;
+    transition: 0.8s all;
+}
+
+.area-newsletter form button[type=submit]:disabled{
+    border: none;
+    outline: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 60%;
+    margin: 0 auto;
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+.area-newsletter form button[type=submit]:valid{
+    border: none;
+    outline: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 60%;
+    margin: 0 auto;
+    opacity: 1;
+    cursor: pointer;
+}
+

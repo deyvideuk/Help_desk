@@ -23,6 +23,7 @@ export class Home {
  onSubmitNewsletter(){
     if(this.newsletter.valid){
       alert("Cadastro realizado com sucesso para: " + this.newsletter.controls.email.value);
+      this.newsletter.reset();
     }
  }
 
