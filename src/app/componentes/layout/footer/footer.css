@@ -72,6 +72,8 @@ footer{
     width: 100%;
     max-width: 350px;
     word-break: break-all;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -81,10 +83,11 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 60px;
+    max-width: 30px;
 }
 
 .box-contatos .area-img img{
     display: flex;
     width: 100%;
+    filter: invert(100%);
 }
