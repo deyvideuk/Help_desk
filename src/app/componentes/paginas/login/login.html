@@ -1,9 +1,10 @@
 <app-header></app-header>
 <section class="conteudo">
-    <div class="ladoEsquerdo">
-        <div class="formBranco">
+    
+    <div class="area-formLogin">
+        <div class="formLogin">
             <div class="msgLogin">
-                <p>MENSAGENS DE BOAS-VINDAS DE VOLTA</p>
+                <p>Login de Atendimento Energisa</p>
             </div>
 
             @if (formLogin.get('cpf')?.hasError('required') && formLogin.get('cpf')?.touched) {
@@ -32,15 +33,15 @@
 
             <form [formGroup]="formLogin" (ngSubmit)="onSubmitLogin()" class="formBranco">
                 <div class="area-input">
-                    <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label><br>
+                    <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label>
                     <input type="text" formControlName="cpf" id="cpf" placeholder="CPF/CNPJ">
                 </div>
                 <div class="area-input">
-                    <label for="senha">Digite sua <strong>senha</strong></label><br>
+                    <label for="senha">Digite sua <strong>senha</strong></label>
                     <input type="password" formControlName="senha" id="senha" placeholder="SENHA">
                 </div>
                 <div class="area-input">
-                    <a href="">Esqueci minha senha</a><br>
+                    <a href="">Esqueci minha senha</a>
                     <a href="">Ainda não possui cadastro?</a>
                 </div>
                 <button type="submit" [disabled]="formLogin.invalid">ENTRAR</button>
@@ -48,9 +49,7 @@
         </div>
     </div>
 
-    <div class="ladoDireito">
-        <img src="" alt="IMAGEM DE FUNDO DIREITA">
-    </div>
+    <div class="cartaz"></div>
 </section>
 
 <app-footer></app-footer>
