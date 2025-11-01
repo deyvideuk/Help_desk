@@ -7,29 +7,11 @@
         <img src="/imagens/logo/energisa-logo.png" alt="LOGO">
     </div>
     
-    @if(this.width < 650){
+    @if(this.width <= 650){
         <app-menu-mobile></app-menu-mobile>
     }
-    @if(this.width >= 650){
-        <div class="area-menu">
-            <ul>
-                <li>
-                    <a routerLink="">Inicio</a>
-                </li>
-                <li>
-                    <a routerLink="">Para você</a>
-                </li>
-                <li>
-                    <a routerLink="">Sobre nós</a>
-                </li>
-                <li>
-                    <a routerLink="">Investidores</a>
-                </li>
-                <li>
-                    <a routerLink="login">Entrar</a>
-                </li>
-            </ul>
-        </div>
+    @if(width > 650){
+        <app-menu-desktop></app-menu-desktop>
     }
 
     <div class="copy">

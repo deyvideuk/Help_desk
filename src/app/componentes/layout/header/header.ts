@@ -1,12 +1,15 @@
 import { Component, Injectable } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { MenuMobile } from '../menu-mobile/menu-mobile';
+import { MenuDesktop } from '../menu-desktop/menu-desktop';
+
 
 @Component({
   selector: 'app-header',
   imports: [
     RouterLink,
-    MenuMobile
+    MenuMobile,
+    MenuDesktop
   ],
   templateUrl: './header.html',
   styleUrl: './header.css'
@@ -17,7 +20,7 @@ import { MenuMobile } from '../menu-mobile/menu-mobile';
 })
 
 export class Header {
-  width = window.innerWidth;
+  public width : any = window.innerWidth;
   
   
   public menu(opt:string){

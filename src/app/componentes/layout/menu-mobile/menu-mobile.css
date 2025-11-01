@@ -1,0 +1,48 @@
+/* celulares */
+@media screen and (max-width: 650px) {
+    header{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: start;
+        left: -700px;
+        transition: 1s all;
+    }
+
+    .copy{
+        display: flex;
+    }
+
+    .btn-close{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        filter: invert(100%);
+    }
+
+    .menu{
+        display: flex;
+        width: 100%;
+    }
+
+    .area-menu{
+        display: flex;
+        width: 100%;
+    }
+
+    .area-menu ul{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .area-menu ul li:not(:last-child)::after{
+        display: none;
+    }
+}
