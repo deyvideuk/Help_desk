@@ -91,3 +91,13 @@ footer{
     width: 100%;
     filter: invert(100%);
 }
+
+/* Estilização de responsividade mobile */
+/* tablets */
+@media screen and (max-width: 750px){
+    .suporte-footer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}

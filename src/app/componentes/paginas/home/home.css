@@ -127,3 +127,24 @@
     cursor: pointer;
 }
 
+
+/* Estilização de responsividade mobile */
+/* tablets */
+@media screen and (max-width: 830px){
+    #home{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+        background-position: top left;
+        padding: 70px 10px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .area-newsletter form input[type=email]{
+    width: 100%;
+}
+}
