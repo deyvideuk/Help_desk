@@ -1,0 +1,57 @@
+.bg-body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+.bg-form {
+    border: solid 1px red;
+}
+#cadastro{
+    text-align: center;
+}
+form{
+    border: solid 1px black;
+}
+.conteudo{
+    border: solid 1ppx black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.esquerda{
+    border: solid 1px yellow;
+}
+.direita{
+    border: solid 1px red;
+}
+label{
+    display: block;
+    margin: 20px 0px 20px 0px;;
+    font-weight: bolder;
+}
+input{
+    color: var(--cor-fundo-branco);
+    background-color: var(--cor-primaria) ;
+    padding : 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

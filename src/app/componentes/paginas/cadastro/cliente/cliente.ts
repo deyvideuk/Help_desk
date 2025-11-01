@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Header } from '../../../layout/header/header';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { Footer } from '../../../layout/footer/footer';
 
 @Component({
   selector: 'app-cliente',
-  imports: [Header, ReactiveFormsModule, RouterLink],
+  imports: [Header, ReactiveFormsModule, RouterLink, Footer],
   templateUrl: './cliente.html',
   styleUrl: './cliente.css'
 })
@@ -16,8 +17,8 @@ export class Cliente {
     complemento: new FormControl('', [Validators.required]),
     dataNasc: new FormControl([Validators.required]),
     senha : new FormControl('', [Validators.required, Validators.minLength(6)]),
-    email : new FormControl("", [Validators.email, Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]),
-    endereco: new FormControl([Validators.required]),
+    email : new FormControl('', [Validators.email, Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]),
+    end: new FormControl('',[Validators.required]),
     numero: new FormControl([Validators.required]),
     telefone: new FormControl('', [Validators.required]),
     confirmSenha: new FormControl('', [Validators.required, Validators.minLength(6)])
