@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0 30px;
 }
 
 .formLogin{
@@ -87,7 +87,7 @@ button{
     font-weight: 800;
 }
 .msgLogin{
-    border: solid 1px green ;
+    /* border: solid 1px green ; */
     display: flex;
     justify-self: center;
     align-items: center;
@@ -95,4 +95,16 @@ button{
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* Estilização de responsividade mobile */
+/* tablets */
+@media screen and (max-width: 900px){
+    .cartaz{
+        display: none;
+    }
+
+    .area-formLogin{
+        padding: 80px 10px;
+    }
 }
