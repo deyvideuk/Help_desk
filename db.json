@@ -1,0 +1,5 @@
+{
+    "clientes": [
+        {"id": 1, "cpf": "140.178.454-28", "nome": "Deyvid André", "senha": "123123"}
+    ]
+}
