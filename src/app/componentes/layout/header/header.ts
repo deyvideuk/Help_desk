@@ -7,16 +7,11 @@ import { MenuDesktop } from '../menu-desktop/menu-desktop';
 @Component({
   selector: 'app-header',
   imports: [
-    RouterLink,
     MenuMobile,
     MenuDesktop
   ],
   templateUrl: './header.html',
   styleUrl: './header.css'
-})
-
-@Injectable({
-  providedIn: 'root'
 })
 
 export class Header {

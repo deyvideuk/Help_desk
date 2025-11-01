@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Header } from '../../layout/header/header';
 import { Footer } from '../../layout/footer/footer';
 import { FormControl, FormGroup, FormGroupName, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -7,7 +6,6 @@ import { FormControl, FormGroup, FormGroupName, ReactiveFormsModule, Validators 
 @Component({
   selector: 'app-home',
   imports: [
-    RouterOutlet,
     ReactiveFormsModule,
     Header,
     Footer
@@ -17,7 +15,7 @@ import { FormControl, FormGroup, FormGroupName, ReactiveFormsModule, Validators 
 })
 export class Home {
  newsletter = new FormGroup({
-    email : new FormControl("", [Validators.email, Validators.required])
+    email : new FormControl("", [Validators.email, Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)])
  });
 
  onSubmitNewsletter(){

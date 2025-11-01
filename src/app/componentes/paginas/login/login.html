@@ -34,7 +34,7 @@
             <form [formGroup]="formLogin" (ngSubmit)="onSubmitLogin()" class="formBranco">
                 <div class="area-input">
                     <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label>
-                    <input type="text" formControlName="cpf" id="cpf" placeholder="CPF/CNPJ">
+                    <input type="text" formControlName="cpf" id="cpf" placeholder="CPF/CNPJ" maxlength="19" minlength="14" (input)="verificar($event)">
                 </div>
                 <div class="area-input">
                     <label for="senha">Digite sua <strong>senha</strong></label>

@@ -31,7 +31,7 @@
                 }
                 
                 <form [formGroup]="newsletter" (ngSubmit)="onSubmitNewsletter()">
-                    <input type="email" placeholder="Email" formControlName="email">
+                    <input type="email" placeholder="Email" formControlName="email" required>
                     <button type="submit" [disabled]="newsletter.invalid">Cadastrar</button>
                 </form>
             </div>
