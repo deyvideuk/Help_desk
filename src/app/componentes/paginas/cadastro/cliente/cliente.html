@@ -1,15 +1,10 @@
 <app-header></app-header>
 <div class="bg-body">
-<<<<<<< HEAD
-    <div class="bg-form">
-        <form [formGroup]="formCadastroCliente">
-
-=======
     <section class="bg-form">
         <h1 id="cadastro">Cadastro Clientes</h1>
         <form [formGroup]="formCadastroCliente">
             <div class="conteudo">
-                <div class="esquerda">
+                <div class="area-input" id="esquerda">
                     <label for="nome">Nome:</label>
                     <input type="text" formControlName="nome" placeholder="Digite seu nome">
                     <label for="cpf">CPF ou CNPJ:</label>
@@ -21,7 +16,7 @@
                     <label for="senha">Senha:</label>
                     <input type="password" formControlName="senha" id="senha" placeholder="Crie sua senha">
                 </div>
-                <div class="direita">
+                <div class="area-input" id="direita">
                     <label for="email">E-mail:</label>
                     <input type="email" formControlName="email" placeholder="Digite seu e-mail">
                     <label for="endereco">Endereço</label>
@@ -31,12 +26,11 @@
                     <input type="number" formControlName="numero" id="numero" placeholder="Digite o número">
                     <label for="telefone">Telefone:</label>
                     <input type="text" formControlName="telefone" placeholder="(DDD)00000-0000">
-                    <label for="confirmSenha">sksi </label>
+                    <label for="confirmSenha"><br></label>
                     <input type="text" formControlName="confirmSenha" placeholder="Confirme a senha">
                 </div>
             </div>
             <button type="submit">CADASTRAR</button>
->>>>>>> bc05b587811fa76fada607993551c5f948e6c925
         </form>
     </section>
 </div>

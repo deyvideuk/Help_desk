@@ -1,33 +1,30 @@
 .bg-body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.bg-form {
-    border: solid 1px red;
-}
-#cadastro{
-    text-align: center;
-}
-form{
-    border: solid 1px black;
+.bg-form{
+    position: relative;
+    justify-items: center;
+    width: min-content;
+    background-color: #fff;
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.085);
 }
 .conteudo{
-    border: solid 1ppx black;
+    gap: 100px;
+    background-color: #fff;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-.esquerda{
-    border: solid 1px yellow;
-}
-.direita{
-    border: solid 1px red;
+    justify-content: center;
 }
 label{
     display: block;
-    margin: 20px 0px 20px 0px;;
+    margin: 10px 0px 10px 0px;;
     font-weight: bolder;
 }
 input{
@@ -42,6 +39,8 @@ input::placeholder{
     color: white;
 }
 button{
+    position: relative;
+    top: 25px;
     display: flex;
     width: 50%;
     text-align: center;
