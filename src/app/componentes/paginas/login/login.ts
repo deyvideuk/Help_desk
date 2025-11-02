@@ -4,13 +4,16 @@ import { Header } from './../../layout/header/header';
 import { Footer } from '../../layout/footer/footer';
 import { RouterLink } from "@angular/router";
 
+
+
 @Component({
   selector: 'app-login',
   imports: [ReactiveFormsModule, Header, Footer, RouterLink],
 templateUrl: './login.html',
   styleUrl: './login.css'
 })
-export class Login {
+export class Login{
+
   formLogin = new FormGroup({
     cpf : new FormControl('', [Validators.required, Validators.minLength(11), Validators.maxLength(19)]),
     senha : new FormControl('', [Validators.required, Validators.minLength(6)])

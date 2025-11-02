@@ -4,6 +4,13 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { RouterLink } from '@angular/router';
 import { Footer } from '../../../layout/footer/footer';
 
+export interface Clientes{
+  id?: number;
+  cpf: string;
+  nome: string;
+  senha: string
+}
+
 @Component({
   selector: 'app-cliente',
   imports: [Header, ReactiveFormsModule, RouterLink, Footer],
