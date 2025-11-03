@@ -7,6 +7,7 @@ import { MenuDesktop } from '../menu-desktop/menu-desktop';
 @Component({
   selector: 'app-header',
   imports: [
+    RouterLink,
     MenuMobile,
     MenuDesktop
   ],
