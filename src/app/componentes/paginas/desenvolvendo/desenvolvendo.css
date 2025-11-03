@@ -1,0 +1,49 @@
+.development-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.content {
+  background: #ffffff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+
+.content h1 {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+
+.content p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px dotted #ff6b6b;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,27 +1,43 @@
 .bg-body{
-    min-height: 100vh;
-    min-width: 100vh;
+    min-height: 80vh;
+    padding: 50px 0px;
     background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/imagens/backgrounds/background-home.jpg");
 }
 .bg-form{
     position: relative;
     justify-items: center;
     width: min-content;
     background-color: #fff;
+    width: 100%;
     max-width: 900px;
     padding: 50px;
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.085);
 }
-.conteudo{
-    gap: 100px;
-    background-color: #fff;
+
+form{
+    /* border: 1px solid #ccc; */
     display: flex;
-    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    flex-wrap: wrap;
+    gap: 10px 30px;
 }
+
+form .box-input{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 15px);
+}
+
+form>:last-child{
+    width: 100%;
+}
+
 label{
     display: block;
     margin: 10px 0px 10px 0px;;
