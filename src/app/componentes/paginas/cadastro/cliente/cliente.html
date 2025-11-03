@@ -1,37 +1,65 @@
 <app-header></app-header>
-<div class="bg-body">
-    <section class="bg-form">
-        <h1 id="cadastro">Cadastro Clientes</h1>
-        <form [formGroup]="formCadastroCliente">
-            <div class="conteudo">
-                <div class="esquerda">
+    <section class="area-conteudo">
+        <div class="conteudo shadow-lg">
+            <h1>Cadastro Clientes</h1>
+
+            <form [formGroup]="formCadastroCliente" (submit)="onSubmitCadCliente()">
+                
+                <div class="box-input">
                     <label for="nome">Nome:</label>
                     <input type="text" formControlName="nome" placeholder="Digite seu nome">
+                </div>
+
+                <div class="box-input">
                     <label for="cpf">CPF ou CNPJ:</label>
                     <input type="text" formControlName="cpf" placeholder="CPF/CNPJ">
+                </div>
+
+                <div class="box-input">
                     <label for="complemento">Complemento:</label>
                     <input type="text" formControlName="complemento" placeholder="Ex: casa, apartamento, hotel">
+                </div>
+
+                <div class="box-input">
                     <label for="dataNasc">Data de nascimento:</label>
                     <input type="date" formControlName="dataNasc" id="dataNasc" placeholder="00/00/0000">
+                </div>
+
+                <div class="box-input">
                     <label for="senha">Senha:</label>
                     <input type="password" formControlName="senha" id="senha" placeholder="Crie sua senha">
                 </div>
-                <div class="direita">
+
+                <div class="box-input">
                     <label for="email">E-mail:</label>
                     <input type="email" formControlName="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="box-input">
                     <label for="endereco">Endereço</label>
                     <input type="text" formControlName="end"
                     placeholder="Digite seu endereço">
+                </div>
+
+                <div class="box-input">
                     <label for="n">N°:</label>
                     <input type="number" formControlName="numero" id="numero" placeholder="Digite o número">
+                </div>
+
+                <div class="box-input">
                     <label for="telefone">Telefone:</label>
                     <input type="text" formControlName="telefone" placeholder="(DDD)00000-0000">
+                </div>
+
+                <div class="box-input">
                     <label for="confirmSenha">sksi </label>
                     <input type="text" formControlName="confirmSenha" placeholder="Confirme a senha">
                 </div>
-            </div>
-            <button type="submit">CADASTRAR</button>
-        </form>
+
+                <div class="box-input">
+                    <app-botao modo="primary" type="submit" texto="Cadastrar"></app-botao>
+                </div>
+            </form>
+        </div>
     </section>
-</div>
 <app-footer></app-footer>

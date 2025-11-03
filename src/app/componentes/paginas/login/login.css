@@ -41,6 +41,14 @@
     gap: 5px;
 }
 
+.area-input>a{
+    color: var(--cor-texto-cinza);
+}
+
+.area-input>a:hover{
+    color: var(--cor-primaria);
+}
+
 .cartaz{
     /* border: solid 1px blue; */
     width: 100%;

@@ -30,7 +30,7 @@
                     </div>
                 }
 
-                <form [formGroup]="formLogin" (ngSubmit)="onSubmitLogin()" class="formBranco">
+                <form [formGroup]="formLogin" (ngSubmit)="onSubmitLogin()">
                     <div class="area-input">
                         <label for="cpf">Digite seu <strong>CPF</strong> ou <strong>CNPJ</strong></label>
                         <input type="text" formControlName="cpf" id="cpf" placeholder="CPF/CNPJ" maxlength="19" minlength="14" (input)="verificar($event)">
@@ -40,8 +40,8 @@
                         <input type="password" formControlName="senha" id="senha" placeholder="SENHA">
                     </div>
                     <div class="area-input">
-                        <a routerLink="">Esqueci minha senha</a>
-                        <a routerLink="/cadastro-cliente">Ainda não possui cadastro?</a>
+                        <a routerLink="/ops..">Esqueci minha senha</a>
+                        <a routerLink="/cadastro-cliente">Ainda não possui Cadastro?</a>
                     </div>
                     <button type="submit" [disabled]="formLogin.invalid">ENTRAR</button>
                 </form>

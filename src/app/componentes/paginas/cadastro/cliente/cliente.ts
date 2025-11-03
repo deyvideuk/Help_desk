@@ -3,17 +3,17 @@ import { Header } from '../../../layout/header/header';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Footer } from '../../../layout/footer/footer';
-
-export interface Clientes{
-  id?: number;
-  cpf: string;
-  nome: string;
-  senha: string
-}
+import { Botao } from '../../../layout/botao/botao';
 
 @Component({
   selector: 'app-cliente',
-  imports: [Header, ReactiveFormsModule, RouterLink, Footer],
+  imports: [
+    RouterLink, 
+    ReactiveFormsModule,
+    Header, 
+    Footer,
+    Botao
+  ],
   templateUrl: './cliente.html',
   styleUrl: './cliente.css'
 })
@@ -30,4 +30,9 @@ export class Cliente {
     telefone: new FormControl('', [Validators.required]),
     confirmSenha: new FormControl('', [Validators.required, Validators.minLength(6)])
   })
+
+  onSubmitCadCliente(){
+    let teste = '201: OK';
+    alert(teste);
+  }
 }

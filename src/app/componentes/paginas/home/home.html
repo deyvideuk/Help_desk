@@ -33,6 +33,8 @@
                 <form [formGroup]="newsletter" (ngSubmit)="onSubmitNewsletter()">
                     <input type="email" placeholder="Email" formControlName="email" required>
                     <button type="submit" [disabled]="newsletter.invalid">Cadastrar</button>
+
+                    <!-- <app-botao modo="primary" type="submit" texto="Cadastrar" [disabled]="newsletter.invalid" [formGroupParent]="newsletter"></app-botao> -->
                 </form>
             </div>
         </div>

@@ -1,57 +1,52 @@
-.bg-body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right;
-}
-.bg-form {
-    border: solid 1px red;
-}
-#cadastro{
-    text-align: center;
-}
-form{
-    border: solid 1px black;
-}
-.conteudo{
-    border: solid 1ppx black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-}
-.esquerda{
-    border: solid 1px yellow;
-}
-.direita{
-    border: solid 1px red;
-}
-label{
-    display: block;
-    margin: 20px 0px 20px 0px;;
-    font-weight: bolder;
-}
-input{
-    color: var(--cor-fundo-branco);
-    background-color: var(--cor-primaria) ;
-    padding : 10px 20px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-}
-input::placeholder{
-    color: white;
-}
-button{
+.area-conteudo{
+    /* border: 1px solid red; */
     display: flex;
-    width: 50%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-image: url("/imagens/backgrounds/background-home.jpg");
+}
+
+.conteudo{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    background-color: var(--cor-primaria);
-    color: var(--cor-texto-branco);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+    gap: 10px;
+    padding: 40px 20px;
+    background-color: var(--cor-fundo-branco);
+    border-radius: 5px;
 }
+
+form{
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+form .box-input{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+form .box-input>label{
+    font-weight: 600;
+}
+
+

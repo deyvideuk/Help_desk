@@ -1,0 +1,31 @@
+.dev-container {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 90vh;
+background: #f5f6fa;
+color: #2f3640;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.dev-card {
+background: #fff;
+padding: 40px 60px;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
+.dev-card h1 {
+font-size: 28px;
+margin-bottom: 10px;
+color: #e1b12c;
+}
+
+
+.dev-card p {
+font-size: 16px;
+color: #718093;
+}
