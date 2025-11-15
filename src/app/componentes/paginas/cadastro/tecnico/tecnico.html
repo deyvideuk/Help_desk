@@ -1,1 +1,42 @@
-<p>tecnico works!</p>
+<app-header></app-header>
+<section class="bg-body">
+    <div class="bg-form">
+        <h1 id="cadastro">Cadastro Clientes</h1>
+        <form [formGroup]="formCadastroTecnico">
+            <div class="box-input">
+                <label for="nome">Nome:</label>
+                <input type="text" formControlName="nome" placeholder="Nome">
+            </div>
+
+            <div class="box-input">
+                <label for="cpf">CPF ou CNPJ:</label>
+                <input type="text" formControlName="cpf" placeholder="CPF/CNPJ">
+            </div>
+            
+            <div class="box-input">
+                <label for="email">E-mail:</label>
+                <input type="email" formControlName="email" placeholder="E-mail">
+            </div>
+            
+            <div class="box-input">
+                <label for="telefone">Telefone:</label>
+                <input type="text" formControlName="telefone" placeholder="(DDD)00000-0000">
+            </div>
+            
+            <div class="box-input">
+                <label for="senha">Senha:</label>
+                <input type="password" formControlName="senha" id="senha" placeholder="Crie sua senha">
+            </div>
+
+            <div class="box-input">
+                <label for="confirmSenha"><br></label>
+                <input type="text" formControlName="confirmSenha" placeholder="Confirme a senha">
+            </div>
+            
+            <div class="box-input"><button type="submit">CADASTRAR</button></div>
+            
+            <a routerLink="/cadastro-cliente" id="routerLink">É um cliente? Inscreva-se!</a>
+        </form>
+    </div>
+</section>
+<app-footer></app-footer>

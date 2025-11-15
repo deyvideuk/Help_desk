@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Header } from '../../../layout/header/header';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Footer } from '../../../layout/footer/footer';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cliente',
-  imports: [Header, ReactiveFormsModule, Footer],
+  imports: [Header, ReactiveFormsModule, Footer, RouterLink],
   templateUrl: './cliente.html',
   styleUrl: './cliente.css'
 })

@@ -23,29 +23,30 @@
                 <input type="date" formControlName="dataNasc" id="dataNasc" placeholder="00/00/0000">
             </div>
 
-            <div class="box-input">
-                <label for="senha">Senha:</label>
-                <input type="password" formControlName="senha" id="senha" placeholder="Crie sua senha">
-            </div>
-
+            
             <div class="box-input">
                 <label for="email">E-mail:</label>
                 <input type="email" formControlName="email" placeholder="E-mail">
             </div>
-
+            
             <div class="box-input">
                 <label for="endereco">Endereço</label>
-                <input type="text" formControlName="end" placeholder="endereço">
+                <input type="text" formControlName="end" placeholder="Endereço">
             </div>
-
+            
             <div class="box-input">
                 <label for="n">N°:</label>
                 <input type="number" formControlName="numero" id="numero" placeholder="Número">
             </div>
-
+            
             <div class="box-input">
                 <label for="telefone">Telefone:</label>
                 <input type="text" formControlName="telefone" placeholder="(DDD)00000-0000">
+            </div>
+            
+            <div class="box-input">
+                <label for="senha">Senha:</label>
+                <input type="password" formControlName="senha" id="senha" placeholder="Crie sua senha">
             </div>
 
             <div class="box-input">
@@ -54,6 +55,8 @@
             </div>
             
             <div class="box-input"><button type="submit">CADASTRAR</button></div>
+            
+            <a routerLink="/cadastro-tecnico" id="routerLink">Faz parte do sistema de técnicos? Inscreva-se!</a>
         </form>
     </div>
 </section>
