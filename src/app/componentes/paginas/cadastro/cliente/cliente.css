@@ -1,5 +1,5 @@
 .bg-body{
-    min-height: 80vh;
+    min-height: 90vh;
     padding: 50px 0px;
     background-color: aquamarine;
     display: flex;
@@ -44,6 +44,7 @@ label{
     font-weight: bolder;
 }
 input{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.099);
     color: var(--cor-fundo-branco);
     background-color: var(--cor-primaria) ;
     padding : 10px 20px;
@@ -56,6 +57,7 @@ input::placeholder{
 }
 button{
     position: relative;
+    left: 50%;
     top: 25px;
     display: flex;
     width: 50%;
@@ -67,6 +69,11 @@ button{
     color: var(--cor-texto-branco);
     padding: 10px 20px;
     border: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.099);
     border-radius: 20px;
     cursor: pointer;
+}
+#routerLink{
+    margin-top: 50px;
+    text-align: center;
 }
