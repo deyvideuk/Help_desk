@@ -8,9 +8,10 @@
     background-color: #026873;
     color: var(--cor-texto-branco);
     background-image: url("/imagens/backgrounds/background-home.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: cover;
+    background-size: 100% 100%;
     min-height: 70vh;
     border-bottom: 1px solid var(--cor-terciaria);
 }   
