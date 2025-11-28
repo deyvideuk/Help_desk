@@ -2,34 +2,37 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Header } from './../../layout/header/header';
 import { Footer } from '../../layout/footer/footer';
-import { RouterLink } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-login',
   imports: [ReactiveFormsModule, Header, Footer, RouterLink],
-templateUrl: './login.html',
+  templateUrl: './login.html',
   styleUrl: './login.css'
 })
 export class Login {
+
+  constructor(private router: Router) {}
+
   formLogin = new FormGroup({
-    cpf : new FormControl('', [Validators.required, Validators.minLength(11), Validators.maxLength(19)]),
-    senha : new FormControl('', [Validators.required, Validators.minLength(6)])
+    cpf: new FormControl('', [Validators.required, Validators.minLength(11), Validators.maxLength(19)]),
+    senha: new FormControl('', [Validators.required, Validators.minLength(6)])
   });
 
-  verificar(event: any){
+  verificar(event: any) {
     let valor = event.target.value.replace(/\D/g, '');
 
     if (valor.length <= 11) {
       valor = valor
-      .replace(/(\d{3})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
     } else {
       valor = valor
-      .replace(/^(\d{3})(\d)/, '$1.$2')
-      .replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3')
-      .replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d{4})/, '$1.$2.$3/$4')
-      .replace(/(\d{4})(\d{0,2})$/, '$1-$2');
+        .replace(/^(\d{3})(\d)/, '$1.$2')
+        .replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3')
+        .replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d{4})/, '$1.$2.$3/$4')
+        .replace(/(\d{4})(\d{0,2})$/, '$1-$2');
     }
 
     event.target.value = valor;
@@ -37,11 +40,12 @@ export class Login {
   }
 
   onSubmitLogin() {
-    if(this.formLogin.valid){
+    if (this.formLogin.valid) {
       alert("Login efetuado com sucesso!");
       console.log(this.formLogin.controls.cpf.value);
       console.log(this.formLogin.controls.senha.value);
       this.formLogin.reset();
+      this.router.navigate(['/dashboard']);
     }
   }
 }
