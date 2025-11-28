@@ -165,7 +165,7 @@ header{
 
     .area-menu ul{
         /* border: 1px solid red; */
-        flex-direction: column;
+        flex-direction: column !important;
         width: 100% !important;
     }
 
