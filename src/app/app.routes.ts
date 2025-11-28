@@ -13,17 +13,15 @@ import { Perfil } from './componentes/paginas/dashboard/perfil/perfil';
 export const routes: Routes = [
     {
         path: 'dashboard',
-        component: Dashboard, // seu layout que contém aside + router-outlet
-        children: [
-        { path: 'meus-chamados', component: MeusChamados },
-        { path: 'abrir-chamado', component: AbrirChamados },
-        { path: 'historico', component: Historico },
-        { path: 'notificacoes', component: Notificacoes },
-        { path: 'perfil', component: Perfil },
-
-        // rota padrão
-        { path: '', redirectTo: 'meus-chamados', pathMatch: 'full' }
-        ]
+        component: Dashboard,
+            children: [
+            { path: '', redirectTo: 'meus-chamados', pathMatch: 'full' },
+            { path: 'meus-chamados', component: MeusChamados },
+            { path: 'abrir-chamado', component: AbrirChamados },
+            { path: 'historico', component: Historico },
+            { path: 'notificacoes', component: Notificacoes },
+            { path: 'perfil', component: Perfil }
+            ]
     },
     {
         path: "",
